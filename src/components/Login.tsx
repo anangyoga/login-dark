@@ -5,17 +5,19 @@ import { ReactComponent as FBIcon } from "../assets/fb.svg";
 import { ReactComponent as GithubIcon } from "../assets/github.svg";
 import { ReactComponent as ElipseTopIcon } from "../assets/elipse-top.svg";
 import { ReactComponent as ElipseRightIcon } from "../assets/elipse-right.svg";
+import { ReactComponent as LineIcon } from "../assets/line.svg";
 import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
     <section className="px-2 py-16 flex flex-col gap-10 md:gap-20 lg:grid lg:grid-cols-5 lg:gap-24 lg:px-[60px] lg:py-[114px]">
       <div className="lg:col-span-3">
-        <div className="flex flex-col justify-center lg:pt-60">
+        <div className="flex flex-col justify-center lg:pt-64">
           <h1 className="text-6xl text-center lg:text-start sm:text-8xl sm:font-semibold text-white sm:leading-normal z-10 tracking-wide">Welcome Back .!</h1>
 
-          <div className="text-center lg:text-start sm:pl-5">
+          <div className="text-center lg:text-start sm:pl-5 relative">
             <span className="sm:text-[32px] text-white font-semibold italic border px-2 py-1 sm:border-4 border-white sm:px-6 sm:py-[14px]">Skip the lag ?</span>
+            <LineIcon className="hidden lg:block absolute top-6 -right-10" />
           </div>
         </div>
       </div>
