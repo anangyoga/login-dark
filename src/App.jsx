@@ -43,7 +43,10 @@ const App = () => {
                     <label>Remember Me</label>
                   </div>
                 </div>
-                <button className="text-xl font-semibold leading-normal px-[10px] py-[14px] bg-gradient-to-r from-[#628EFF] via-[#8740CD] to-[#580475] rounded-2xl">Login</button>
+                <div className="flex flex-col gap-3">
+                  <button className="text-xl font-semibold leading-normal px-[10px] py-[14px] bg-gradient-to-r from-[#628EFF] via-[#8740CD] to-[#580475] rounded-2xl">Login</button>
+                  <button className="text-center">Forgot password ?</button>
+                </div>
               </div>
             </div>
             <div className="flex flex-col gap-[101px]">
@@ -54,17 +57,19 @@ const App = () => {
                   <hr className="border border-[#4D4D4D] w-full" />
                 </div>
                 <div className="flex justify-center items-center gap-[18px]">
-                  <GoogleIcon />
-                  <FBIcon />
-                  <GithubIcon />
+                  <GoogleIcon className="cursor-pointer" />
+                  <FBIcon className="cursor-pointer" />
+                  <GithubIcon className="cursor-pointer" />
                 </div>
               </div>
               <div className="flex flex-col gap-2">
-                <p className="text-base font-medium  text-white text-center">Don’t have an account ? Signup</p>
+                <p className="text-base font-medium  text-white text-center">
+                  Don’t have an account ? <span className="cursor-pointer">Signup</span>
+                </p>
                 <div className="flex justify-between items-center">
-                  <p className="text-base font-normal">Terms & Conditions</p>
-                  <p className="text-base font-normal">Support</p>
-                  <p className="text-base font-normal">Customer Care</p>
+                  <p className="text-base font-normal cursor-pointer">Terms & Conditions</p>
+                  <p className="text-base font-normal cursor-pointer">Support</p>
+                  <p className="text-base font-normal cursor-pointer">Customer Care</p>
                 </div>
               </div>
             </div>
