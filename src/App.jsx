@@ -2,19 +2,24 @@ import { ReactComponent as EyeIcon } from "./assets/eye.svg";
 import { ReactComponent as GoogleIcon } from "./assets/google.svg";
 import { ReactComponent as FBIcon } from "./assets/fb.svg";
 import { ReactComponent as GithubIcon } from "./assets/github.svg";
+import { ReactComponent as ElipseTopIcon } from "./assets/elipse-top.svg";
+import { ReactComponent as ElipseRightIcon } from "./assets/elipse-right.svg";
 
 const App = () => {
   return (
     <main className="bg-black min-h-screen">
-      <section className="flex items-center px-[60px] min-h-screen">
-        <div className="w-2/3">
+      <section className="flex items-center gap-[83px] px-[60px] py-[114px] min-h-screen">
+        <div>
           <h1 className="text-8xl font-semibold text-white leading-normal">Welcome Back .!</h1>
 
           <div className="pl-5">
             <span className="text-[32px] text-white font-semibold italic border-4 border-white px-6 py-[14px]">Skip the lag ?</span>
           </div>
         </div>
-        <div className="w-1/3">
+
+        <div className="w-[480px] relative">
+          <ElipseTopIcon className="absolute -top-8 -left-36" />
+          <ElipseRightIcon className="absolute -bottom-20 -right-9" />
           <div className="border border-gray-200 rounded-2xl bg-white bg-opacity-10 backdrop-blur-xl px-10 py-24 text-white flex flex-col gap-12">
             <div className=" flex flex-col gap-[14px]">
               <div>
