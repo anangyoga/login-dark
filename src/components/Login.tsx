@@ -11,7 +11,7 @@ const Login = () => {
   return (
     <section className="px-2 py-16 flex flex-col gap-10 md:gap-20 lg:grid lg:grid-cols-5 lg:gap-24 lg:px-[60px] lg:py-[114px]">
       <div className="lg:col-span-3">
-        <div className="flex flex-col justify-center lg:min-h-screen">
+        <div className="flex flex-col justify-center lg:pt-60">
           <h1 className="text-6xl text-center lg:text-start sm:text-8xl sm:font-semibold text-white sm:leading-normal z-10 tracking-wide">Welcome Back .!</h1>
 
           <div className="text-center lg:text-start sm:pl-5">
