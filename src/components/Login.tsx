@@ -9,22 +9,22 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <section className="grid grid-cols-5 gap-24 px-[60px] py-[114px]">
-      <div className="col-span-3">
-        <div className="flex flex-col justify-center min-h-screen">
-          <h1 className="text-8xl font-semibold text-white leading-normal">Welcome Back .!</h1>
+    <section className="px-2 py-16 flex flex-col gap-10 sm:grid sm:grid-cols-5 sm:gap-24 sm:px-[60px] sm:py-[114px]">
+      <div className="sm:col-span-3">
+        <div className="flex flex-col justify-center sm:min-h-screen">
+          <h1 className="text-4xl text-center sm:text-start sm:text-8xl sm:font-semibold text-white sm:leading-normal">Welcome Back .!</h1>
 
-          <div className="pl-5">
-            <span className="text-[32px] text-white font-semibold italic border-4 border-white px-6 py-[14px]">Skip the lag ?</span>
+          <div className="pl-12 sm:pl-5">
+            <span className="sm:text-[32px] text-white font-semibold italic border px-2 py-1 sm:border-4 border-white sm:px-6 sm:py-[14px]">Skip the lag ?</span>
           </div>
         </div>
       </div>
 
-      <div className="w-[480px] relative col-span-2 justify-self-end">
-        <ElipseTopIcon className="absolute w-[302px] h-[302px] -top-12 -left-48" />
-        <ElipseRightIcon className="absolute -bottom-20 -right-9" />
-        <div className="border border-gray-200 rounded-2xl bg-white bg-opacity-5 backdrop-blur-[26px] px-10 py-24 text-white flex flex-col gap-12">
-          <div className="flex flex-col gap-[14px] w-[400px]">
+      <div className="sm:w-[480px] relative col-span-2 justify-self-end">
+        <ElipseTopIcon className="absolute sm:w-[302px] sm:h-[302px] sm:-top-12 sm:-left-48" />
+        <ElipseRightIcon className="absolute bottom-0 right-0 sm:-bottom-20 sm:-right-9" />
+        <div className="border border-gray-200 rounded-2xl bg-white bg-opacity-5 backdrop-blur-[26px] px-6 py-10 sm:px-10 sm:py-24 text-white flex flex-col gap-12">
+          <div className="flex flex-col gap-[14px] sm:w-[400px]">
             <div>
               <h3 className="text-4xl leading-normal font-semibold">Login</h3>
               <p className="text-base font-medium leading-normal">Glad you’re back.!</p>
@@ -74,7 +74,7 @@ const Login = () => {
                   Signup
                 </Link>
               </p>
-              <div className="flex justify-between items-center">
+              <div className="flex flex-col sm:flex-row items-center sm:justify-between ">
                 <p className="text-base font-normal cursor-pointer">Terms & Conditions</p>
                 <p className="text-base font-normal cursor-pointer">Support</p>
                 <p className="text-base font-normal cursor-pointer">Customer Care</p>
