@@ -26,15 +26,19 @@ const Login = () => {
         <div className="border border-gray-200 rounded-2xl bg-white bg-opacity-5 backdrop-blur-[26px] px-6 py-10 sm:px-10 sm:py-24 text-white flex flex-col gap-12">
           <div className="flex flex-col gap-[14px] md:w-full lg:w-[400px]">
             <div>
-              <h3 className="text-4xl leading-normal font-semibold">Login</h3>
-              <p className="text-base font-medium leading-normal">Glad you’re back.!</p>
+              <h3 className="text-3xl md:text-4xl leading-normal font-semibold">Login</h3>
+              <p className="text-sm md:text-base font-medium leading-normal">Glad you’re back.!</p>
             </div>
             <div className="flex flex-col gap-6">
-              <input className="px-4 py-[14px] w-full bg-transparent border border-gray-100 rounded-2xl placeholder:text-xl placeholder:font-normal placeholder:text-white placeholder:leading-normal" type="text" placeholder="Username" />
+              <input
+                className="px-4 py-[14px] w-full bg-transparent border border-gray-100 rounded-2xl placeholder:text-lg md:placeholder:text-xl placeholder:font-normal placeholder:text-white placeholder:leading-normal"
+                type="text"
+                placeholder="Username"
+              />
 
               <div className="relative flex flex-col gap-[14px]">
                 <input
-                  className="relative px-4 py-[14px] w-full bg-transparent border border-gray-100 rounded-2xl placeholder:text-xl placeholder:font-normal placeholder:text-white placeholder:leading-normal "
+                  className="relative px-4 py-[14px] w-full bg-transparent border border-gray-100 rounded-2xl placeholder:text-lg md:placeholder:text-xl placeholder:font-normal placeholder:text-white placeholder:leading-normal "
                   type="password"
                   placeholder="Password"
                 />
@@ -43,12 +47,12 @@ const Login = () => {
                 </div>
                 <div className="flex items-center gap-1">
                   <input type="checkbox" />
-                  <label>Remember Me</label>
+                  <label className="text-sm md:text-base">Remember Me</label>
                 </div>
               </div>
               <div className="flex flex-col gap-3">
-                <button className="text-xl font-semibold leading-normal px-[10px] py-[14px] bg-gradient-to-r from-[#628EFF] via-[#8740CD] to-[#580475] rounded-2xl">Login</button>
-                <Link to={`/forgot-password`} className="text-center">
+                <button className="text-lg md:text-xl font-semibold leading-normal px-[10px] py-[14px] bg-gradient-to-r from-[#628EFF] via-[#8740CD] to-[#580475] rounded-2xl">Login</button>
+                <Link to={`/forgot-password`} className="text-center text-sm md:text-base">
                   Forgot password ?
                 </Link>
               </div>
@@ -58,7 +62,7 @@ const Login = () => {
             <div className="flex flex-col gap-3">
               <div className="flex gap-5 items-center">
                 <hr className="border border-[#4D4D4D] w-full" />
-                <p className="text-[#4D4D4D] text-base font-medium leading-normal">Or</p>
+                <p className="text-[#4D4D4D] text-sm md:text-base font-medium leading-normal">Or</p>
                 <hr className="border border-[#4D4D4D] w-full" />
               </div>
               <div className="flex justify-center items-center gap-[18px]">
@@ -68,16 +72,16 @@ const Login = () => {
               </div>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="text-base font-medium  text-white text-center">
+              <p className="text-sm md:text-base font-medium  text-white text-center">
                 Don’t have an account ?{" "}
                 <Link to={`/signup`} className="cursor-pointer">
                   Signup
                 </Link>
               </p>
               <div className="flex flex-col sm:flex-row items-center md:justify-evenly lg:justify-between ">
-                <p className="text-base font-normal cursor-pointer">Terms & Conditions</p>
-                <p className="text-base font-normal cursor-pointer">Support</p>
-                <p className="text-base font-normal cursor-pointer">Customer Care</p>
+                <p className="text-sm md:text-base font-normal cursor-pointer">Terms & Conditions</p>
+                <p className="text-sm md:text-base font-normal cursor-pointer">Support</p>
+                <p className="text-sm md:text-base font-normal cursor-pointer">Customer Care</p>
               </div>
             </div>
           </div>
