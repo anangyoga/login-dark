@@ -9,22 +9,22 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <section className="px-2 py-16 flex flex-col gap-10 sm:grid sm:grid-cols-5 sm:gap-24 sm:px-[60px] sm:py-[114px]">
-      <div className="sm:col-span-3">
-        <div className="flex flex-col justify-center sm:min-h-screen">
-          <h1 className="text-4xl text-center sm:text-start sm:text-8xl sm:font-semibold text-white sm:leading-normal">Welcome Back .!</h1>
+    <section className="px-2 py-16 flex flex-col gap-10 md:gap-20 lg:grid lg:grid-cols-5 lg:gap-24 lg:px-[60px] lg:py-[114px]">
+      <div className="lg:col-span-3">
+        <div className="flex flex-col justify-center lg:min-h-screen">
+          <h1 className="text-6xl text-center lg:text-start sm:text-8xl sm:font-semibold text-white sm:leading-normal z-10">Welcome Back .!</h1>
 
-          <div className="pl-12 sm:pl-5">
+          <div className="text-center lg:text-start sm:pl-5">
             <span className="sm:text-[32px] text-white font-semibold italic border px-2 py-1 sm:border-4 border-white sm:px-6 sm:py-[14px]">Skip the lag ?</span>
           </div>
         </div>
       </div>
 
-      <div className="sm:w-[480px] relative col-span-2 justify-self-end">
-        <ElipseTopIcon className="absolute sm:w-[302px] sm:h-[302px] sm:-top-12 sm:-left-48" />
-        <ElipseRightIcon className="absolute bottom-0 right-0 sm:-bottom-20 sm:-right-9" />
+      <div className="md:w-full lg:w-[480px] relative lg:col-span-2 justify-self-end">
+        <ElipseTopIcon className="absolute w-[302px] h-[302px] lg:-top-12 lg:-left-48" />
+        <ElipseRightIcon className="absolute bottom-0 right-0 lg:-bottom-20 lg:-right-9" />
         <div className="border border-gray-200 rounded-2xl bg-white bg-opacity-5 backdrop-blur-[26px] px-6 py-10 sm:px-10 sm:py-24 text-white flex flex-col gap-12">
-          <div className="flex flex-col gap-[14px] sm:w-[400px]">
+          <div className="flex flex-col gap-[14px] md:w-full lg:w-[400px]">
             <div>
               <h3 className="text-4xl leading-normal font-semibold">Login</h3>
               <p className="text-base font-medium leading-normal">Glad you’re back.!</p>
@@ -74,7 +74,7 @@ const Login = () => {
                   Signup
                 </Link>
               </p>
-              <div className="flex flex-col sm:flex-row items-center sm:justify-between ">
+              <div className="flex flex-col sm:flex-row items-center md:justify-evenly lg:justify-between ">
                 <p className="text-base font-normal cursor-pointer">Terms & Conditions</p>
                 <p className="text-base font-normal cursor-pointer">Support</p>
                 <p className="text-base font-normal cursor-pointer">Customer Care</p>
