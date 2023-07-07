@@ -20,7 +20,7 @@ const App = () => {
         <div className="w-[480px] relative">
           <ElipseTopIcon className="absolute -top-8 -left-36" />
           <ElipseRightIcon className="absolute -bottom-20 -right-9" />
-          <div className="border border-gray-200 rounded-2xl bg-white bg-opacity-10 backdrop-blur-xl px-10 py-24 text-white flex flex-col gap-12">
+          <div className="border border-gray-200 rounded-2xl bg-white bg-opacity-5 backdrop-blur-md px-10 py-24 text-white flex flex-col gap-12">
             <div className=" flex flex-col gap-[14px]">
               <div>
                 <h3 className="text-4xl leading-normal font-semibold">Login</h3>
