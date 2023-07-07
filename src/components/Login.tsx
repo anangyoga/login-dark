@@ -5,6 +5,7 @@ import { ReactComponent as FBIcon } from "../assets/fb.svg";
 import { ReactComponent as GithubIcon } from "../assets/github.svg";
 import { ReactComponent as ElipseTopIcon } from "../assets/elipse-top.svg";
 import { ReactComponent as ElipseRightIcon } from "../assets/elipse-right.svg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -47,7 +48,9 @@ const Login = () => {
               </div>
               <div className="flex flex-col gap-3">
                 <button className="text-xl font-semibold leading-normal px-[10px] py-[14px] bg-gradient-to-r from-[#628EFF] via-[#8740CD] to-[#580475] rounded-2xl">Login</button>
-                <button className="text-center">Forgot password ?</button>
+                <Link to={`/forgot-password`} className="text-center">
+                  Forgot password ?
+                </Link>
               </div>
             </div>
           </div>
@@ -66,7 +69,10 @@ const Login = () => {
             </div>
             <div className="flex flex-col gap-2">
               <p className="text-base font-medium  text-white text-center">
-                Don’t have an account ? <span className="cursor-pointer">Signup</span>
+                Don’t have an account ?{" "}
+                <Link to={`/signup`} className="cursor-pointer">
+                  Signup
+                </Link>
               </p>
               <div className="flex justify-between items-center">
                 <p className="text-base font-normal cursor-pointer">Terms & Conditions</p>
