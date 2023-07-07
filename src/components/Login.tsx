@@ -12,7 +12,7 @@ const Login = () => {
     <section className="px-2 py-16 flex flex-col gap-10 md:gap-20 lg:grid lg:grid-cols-5 lg:gap-24 lg:px-[60px] lg:py-[114px]">
       <div className="lg:col-span-3">
         <div className="flex flex-col justify-center lg:min-h-screen">
-          <h1 className="text-6xl text-center lg:text-start sm:text-8xl sm:font-semibold text-white sm:leading-normal z-10">Welcome Back .!</h1>
+          <h1 className="text-6xl text-center lg:text-start sm:text-8xl sm:font-semibold text-white sm:leading-normal z-10 tracking-wide">Welcome Back .!</h1>
 
           <div className="text-center lg:text-start sm:pl-5">
             <span className="sm:text-[32px] text-white font-semibold italic border px-2 py-1 sm:border-4 border-white sm:px-6 sm:py-[14px]">Skip the lag ?</span>
@@ -31,14 +31,14 @@ const Login = () => {
             </div>
             <div className="flex flex-col gap-6">
               <input
-                className="px-4 py-[14px] w-full bg-transparent border border-gray-100 rounded-2xl placeholder:text-lg md:placeholder:text-xl placeholder:font-normal placeholder:text-white placeholder:leading-normal"
+                className="px-4 py-[14px] w-full bg-transparent border border-gray-100 rounded-2xl placeholder:text-lg md:placeholder:text-xl placeholder:font-normal placeholder:text-white placeholder:leading-normal outline-none"
                 type="text"
                 placeholder="Username"
               />
 
               <div className="relative flex flex-col gap-[14px]">
                 <input
-                  className="relative px-4 py-[14px] w-full bg-transparent border border-gray-100 rounded-2xl placeholder:text-lg md:placeholder:text-xl placeholder:font-normal placeholder:text-white placeholder:leading-normal "
+                  className="relative px-4 py-[14px] w-full bg-transparent border border-gray-100 rounded-2xl placeholder:text-lg md:placeholder:text-xl placeholder:font-normal placeholder:text-white placeholder:leading-normal outline-none"
                   type="password"
                   placeholder="Password"
                 />
