@@ -1,10 +1,8 @@
 import React from "react";
-import { ReactComponent as EyeIcon } from "../assets/eye.svg";
 import { ReactComponent as GoogleIcon } from "../assets/google.svg";
 import { ReactComponent as FBIcon } from "../assets/fb.svg";
 import { ReactComponent as GithubIcon } from "../assets/github.svg";
 import { ReactComponent as BlueElipseTopIcon } from "../assets/blue-elipse-top.svg";
-import { ReactComponent as ElipseRightIcon } from "../assets/elipse-right.svg";
 import { ReactComponent as LineIcon } from "../assets/line.svg";
 import { Link } from "react-router-dom";
 
